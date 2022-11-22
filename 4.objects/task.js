@@ -6,9 +6,9 @@ function Student(name, gender, age) {
 Student.prototype.setSubject = function (subjectName) {
 this.subject = subjectName;
 }
-Student.prototype.addMarks = function(mark) {
+Student.prototype.addMark = function(mark) {
 if(this.marks === undefined) {
-  this.marks = mark;
+  this.marks = [mark];
 }else {
   this.marks.push(mark)
 }
