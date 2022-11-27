@@ -28,28 +28,31 @@ class Magazine extends PrintEditionItem {
         this.type = "magazine";
     }
 }
-class Book extends printEditionItem {
-    constructor(name, releaseDate, pagesCount) {
-        super(name, releaseDate, pagesCount);
+class Book extends PrintEditionItem {
+    constructor(author, type, releaseDate, pagesCount) {
+        super(type, releaseDate, pagesCount);
         this.author = author;
-        this.type = book;
+        this.type = "book";
     }
 }
+
 class NovelBook extends Book {
-    constructor(name, releaseDate, pagesCount) {
-        super(name, releaseDate, pagesCount);
+    constructor(author, type, releaseDate, pagesCount) {
+        super(author, type, releaseDate, pagesCount);
         this.type = "novel";
     }
 }
+
 class FantasticBook extends Book {
-    constructor(name, releaseDate, pagesCount) {
-        super(name, releaseDate, pagesCount);
+    constructor(author, type, releaseDate, pagesCount) {
+        super(author, type, releaseDate, pagesCount);
         this.type = "fantastic";
     }
 }
+
 class DetectiveBook extends Book {
-    constructor(name, releaseDate, pagesCount) {
-        super(name, releaseDate, pagesCount);
+    constructor(author, type, releaseDate, pagesCount) {
+        super(author, type, releaseDate, pagesCount);
         this.type = "detective";
     }
 }
